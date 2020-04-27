@@ -1,4 +1,7 @@
 # Hypothesis-Assistant
+
+- [more about the plugin](https://tim.bai.uno/hello-world/)
+
 A plugin for hypothes.is anntation, to enable bookmarklet on all websites on firefox
 
 
