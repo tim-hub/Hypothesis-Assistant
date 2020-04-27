@@ -4,7 +4,7 @@
 // @author          tim-hub
 // @description     This is a plugin to help enable hypothes.is bookmarklet to all websites by default on firefox.
 // @description:zh  在Firefox上使Hypothesis自动启动。
-// @namespace       https://github.com/tim-hub/Hypothesis-Assistant
+// @namespace
 // @homepageURL     https://github.com/tim-hub/Hypothesis-Assistant
 // @supportURL      https://github.com/tim-hub/Hypothesis-Assistant/issues/
 
@@ -29,8 +29,8 @@
     window.hypothesisConfig=function(){
       return{showHighlights:true,appType:'bookmarklet'};
     };
-    const d=document;
-    const s=d.createElement('script');
+    var d=document;
+    var s=d.createElement('script');
     s.setAttribute('src','https://hypothes.is/embed.js');
     d.body.appendChild(s);
   }
