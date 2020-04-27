@@ -19,6 +19,8 @@
 // @exclude         http://127.0.0.1*
 // @exclude         http://192.168.*
 // @exclude         http://*.*/wp-admin/*
+
+// @match           *://*/*
 // ==/UserScript==
 
 /**
