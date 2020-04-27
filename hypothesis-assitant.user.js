@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name            Hypothesis Bookmarklet Assistance
+// @name            Hypothesis Assistant
 // @version         1.0.0-dev
 // @author          tim-hub
-// @description     This is a plugin to help enable hypothes.is bookmarklet to all websites by default on firefox .
+// @description     This is a plugin to help enable hypothes.is bookmarklet to all websites by default on firefox.
 
 // @grant    				none
 // @noframes
@@ -16,6 +16,9 @@
 // @exclude         http://*.*/wp-admin/*
 // ==/UserScript==
 
+/**
+ * Repo: https://github.com/tim-hub/Hypothesis-Assistant
+ */
 (
   function(){
     window.hypothesisConfig=function(){
