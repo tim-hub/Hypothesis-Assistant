@@ -4,7 +4,7 @@
 // @author          tim-hub
 // @description     This is a plugin to help enable hypothes.is bookmarklet to all websites by default on firefox.
 // @description:zh  在Firefox上使Hypothesis自动启动。
-// @namespace
+// @namespace       https://greasyfork.org/users/542418
 // @homepageURL     https://github.com/tim-hub/Hypothesis-Assistant
 // @supportURL      https://github.com/tim-hub/Hypothesis-Assistant/issues/
 
