@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Hypothesis Assistant
-// @version         1.0.0-dev
+// @version         1.0.1-dev
 // @author          tim-hub
 // @description     This is a plugin to help enable hypothes.is bookmarklet to all websites by default on firefox.
 // @description:zh  在Firefox上使Hypothesis自动启动。
