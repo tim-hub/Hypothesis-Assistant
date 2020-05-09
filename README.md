@@ -11,8 +11,11 @@ A plugin for hypothes.is anntation, to enable bookmarklet on all websites on fir
 On firefox, there is no Hypothesis add-in, instead Hypothesis offer a bookmarklet, however clicking the bookmarklet everytime is so annoying.
 This plugin is help you to enable Hypothesis on every websites by default.
 
+## Road Map
+- [ ] Keyboard shortcut to enable or disable hypothesis plugin
+- [ ] Build a service for centralising black list not just creasy monkey script
 
-## Blacklist
+## Blacklist Sample
 
 ```javascript
 // @exclude         https://www.google.com/search*
