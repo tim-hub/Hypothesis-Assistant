@@ -20,6 +20,13 @@
 // @exclude         http://127.0.0.1*
 // @exclude         http://192.168.*
 // @exclude         *://*.*/wp-admin/*
+// @exclude         *://tim.bai.uno/*
+// @exclude         *://*.*/login/*
+// @exclude         *://*.*/signin/*
+// @exclude         *://*.*/signup/*
+// @exclude         *console.aws.amazon.com/*
+// @exclude         *dashboard.heroku.com/*
+
 
 // @match           *://*/*
 // ==/UserScript==
@@ -28,13 +35,43 @@
  * Repo: https://github.com/tim-hub/Hypothesis-Assistant
  */
 (
-  function(){
-    window.hypothesisConfig=function(){
-      return{showHighlights:true,appType:'bookmarklet'};
+  function () {
+
+    window.hypothesisConfig = function () {
+      return {
+        showHighlights: true,
+        appType: 'bookmarklet'
+      };
     };
-    var d=document;
-    var s=d.createElement('script');
-    s.setAttribute('src','https://hypothes.is/embed.js');
-    d.body.appendChild(s);
+
+    var appended = false;
+    var d = document;
+    var s = d.createElement('script');
+
+    s.setAttribute('src', 'https://hypothes.is/embed.js');
+    s.setAttribute('id', 'hypothesis-bookmarklet-script');
+
+
+
+    window.onkeyup = function (e) {
+      if (e.shiftKey && e.key=== 'H') {
+        if (!appended) {
+          console.log('load hypothesis');
+          d.body.appendChild(s);
+          appended = true;
+        } else {
+          console.log('unload hypothesis');
+          document.getElementById('hypothesis-bookmarklet-script').remove();
+          document.getElementsByTagName("hypothesis-adder")[0].remove();
+          document.getElementsByClassName("annotator-frame")[0].remove();
+          window.hypothesisConfig = function () {
+            return {
+              showHighlights: false,
+            };
+          };
+          appended = false;
+        }
+      }
+    };
   }
 )();
